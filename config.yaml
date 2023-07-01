@@ -1,4 +1,43 @@
-baseURL: 'http://example.org/'
-languageCode: 'en-us'
-title: 'Paweł Grad'
-theme: 'PaperMod'
+baseURL: "http://pawelgrad.pl/"
+languageCode: "en-us"
+title: "Paweł Grad"
+theme: "PaperMod"
+paginate: 10
+enableRobotsTXT: true
+# pluralizeListTitles: true
+# sectionPagesMenu: 'main'
+# copyright: 'All content licensed [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)'
+menu:
+  main:
+    - identifier: cv
+      name: CV
+      url: /cv/
+      weight: 20
+    - identifier: posts
+      name: Blog
+      url: /posts/
+      weight: 10
+
+params:
+  profileMode:
+    enabled: true
+    # title: "<Title>" # optional default will be site title
+    # subtitle: "This is subtitle"
+    # imageUrl: "<image link>" # optional
+    # imageTitle: "<title of image as alt>" # optional
+    # imageWidth: 120 # custom size
+    # imageHeight: 120 # custom size
+
+  socialIcons: # optional
+    - name: "gitHub"
+      url: "https://github.com"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/pawelgrad/"
+
+  # ShowShareButtons: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
